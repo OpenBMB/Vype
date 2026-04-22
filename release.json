@@ -1,0 +1,15 @@
+{
+  "macos": {
+    "version": "v1.1.1",
+    "artifact": "Vype.dmg",
+    "url": "https://github.com/OpenBMB/Vype/releases/download/v1.1.1/Vype.dmg"
+  },
+  "android": {
+    "version": "v1.1.1",
+    "artifact": "Vype.apk",
+    "url": "https://github.com/OpenBMB/Vype/releases/download/v1.1.1/Vype.apk"
+  },
+  "windows": null,
+  "ios": null,
+  "harmony": null
+}
