@@ -11,8 +11,8 @@
   },
   "windows": {
     "version": "v1.1.1",
-    "artifact": "Vype-windows-x64.msix",
-    "url": "https://github.com/OpenBMB/Vype/releases/download/v1.1.1/Vype-windows-x64.msix"
+    "artifact": "Vype.msix",
+    "url": "https://github.com/OpenBMB/Vype/releases/download/v1.1.1/Vype.msix"
   },
   "ios": null,
   "harmony": null
