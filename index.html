@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-beasties-container>
+    <head>
+        <meta charset="utf-8">
+        <title>Vype — See your words take shape</title>
+        <base href="/Vype/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Ccircle cx='512' cy='512' r='512' fill='%233B6FF0'/%3E%3Crect x='370' y='440' width='54' height='216' rx='27' fill='white' opacity='.95'/%3E%3Crect x='485' y='296' width='54' height='432' rx='27' fill='white' opacity='.95'/%3E%3Crect x='600' y='384' width='54' height='324' rx='27' fill='white' opacity='.95'/%3E%3C/svg%3E">
+        <meta name="description" content="Vype transforms your voice into text you can see and edit in real time. Available on macOS and Android.">
+        <meta name="theme-color" content="#FFFFFF">
+        <style>
+            @font-face {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 300 700;
+                font-display: swap;
+                src: url("asset/font/inter-latin-ext.woff2") format("woff2");
+                unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC,
+                    U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+                    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+                    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 300 700;
+                font-display: swap;
+                src: url("asset/font/inter-latin.woff2") format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+                    U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
+                    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+                    U+FFFD;
+            }
+        </style>
+    <style>:root{--brand-container:#e8f0fe;--brand-on-primary:#ffffff;--brand-primary:#3b6ff0;--semantic-command:#ab6bf0;--semantic-error:#e5484d;--semantic-linting:#f59e0b;--semantic-manual:#0ea5e9;--semantic-recording:#e5484d;--semantic-success:#30a46c;--overlay-recording:#d96b6e;--n50:#fafafa;--n100:#f4f4f5;--n200:#e4e4e7;--n300:#d4d4d8;--n400:#a1a1aa;--n500:#71717a;--n600:#52525b;--n700:#3f3f46;--n800:#27272a;--n900:#18181b;--n950:#09090b;--surface-bg:#fafafa;--surface-border:#e4e4e7;--surface-elevated:#ffffff;--surface-overlay:rgba(255,255,255,.85);--surface-primary:#ffffff;--text-on-color:#ffffff;--text-primary:#09090b;--text-secondary:#52525b;--text-tertiary:#a1a1aa;--highlight-linting:rgba(245,158,11,.15);--elevation-sm:0 1px 3px rgba(0,0,0,.08);--elevation-md:0 4px 12px rgba(0,0,0,.1);--elevation-lg:0 12px 32px rgba(0,0,0,.12);--radius-lg:12px;--radius-md:8px;--radius-sm:6px;--radius-xl:16px;--radius-xs:3px;--radius-xxs:1.5px;--opacity-disabled:.38;--opacity-frost:.55;--opacity-hover:.08;--opacity-medium:.3;--opacity-overlay:.85;--opacity-pressed:.12;--opacity-strong:.6;--opacity-subtle:.15;--motion-fast:.1s;--motion-normal:.2s;--motion-slow:.35s;--easing-standard:cubic-bezier(.25, .1, .25, 1);--easing-spring:cubic-bezier(.34, 1.56, .64, 1)}@media(prefers-color-scheme:dark){:root{--brand-container:#2a3352;--brand-on-primary:#ffffff;--brand-primary:#5b8af5;--n50:#0e0c0f;--n100:#19161a;--n200:#272429;--n300:#38353a;--n400:#4a454d;--n500:#71717a;--n600:#9b9194;--n700:#b6aeb0;--n800:#d0cacc;--n900:#e5e0e2;--n950:#f2eff0;--surface-bg:#1e1c1f;--surface-border:#4a454d;--surface-elevated:#2f2d31;--surface-overlay:rgba(30,28,31,.85);--surface-primary:#272529;--text-on-color:#ffffff;--text-primary:#e8ddd4;--text-secondary:#9b9194;--text-tertiary:#6b6367;--highlight-linting:rgba(245,158,11,.2);--elevation-sm:0 1px 3px rgba(0,0,0,.3);--elevation-md:0 4px 12px rgba(0,0,0,.4);--elevation-lg:0 12px 32px rgba(0,0,0,.5)}}:root{--space-xxs:2px;--space-xs:4px;--space-sm:8px;--space-md:12px;--space-lg:16px;--space-xl:20px;--space-xxl:24px;--space-xxxl:32px;--space-xxxxl:40px;--space-5xl:48px;--space-6xl:64px;--surface-bg:#ffffff;--surface-primary:#fbfbfd;--surface-elevated:#ffffff;--surface-border:#e5e5ea;--text-primary:#1d1d1f;--text-secondary:#6e6e73;--text-tertiary:#86868b;--brand-primary:#0071e3;--brand-on-primary:#ffffff;--elevation-sm:0 1px 3px rgba(0, 0, 0, .06);--elevation-md:0 4px 16px rgba(0, 0, 0, .08);--elevation-lg:0 12px 40px rgba(0, 0, 0, .1)}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;color-scheme:light}body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--surface-bg);color:var(--text-primary);line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}</style><link rel="stylesheet" href="styles-ZLAPQPJI.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-ZLAPQPJI.css"></noscript></head>
+    <body>
+        <vype-root></vype-root>
+    <link rel="modulepreload" href="chunk-ETYLWIXT.js"><link rel="modulepreload" href="chunk-OCMM5E6W.js"><script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-VRIBNHG6.js" type="module"></script></body>
+</html>
